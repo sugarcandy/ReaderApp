@@ -68,8 +68,8 @@ public class BookShelfActivity extends AppCompatActivity {
 
     int [] xmlpath={
       R.id.title,
-      R.id.describe,
-      R.id.author
+//      R.id.describe,
+//      R.id.author
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,8 +116,8 @@ public class BookShelfActivity extends AppCompatActivity {
             for (BookBean bookBean : list) {//添加数据库的所有书籍
                 Map<String, String> map = new HashMap<>();
                 map.put("name", bookBean.getName());
-                map.put("introduce", bookBean.getIntroduce());
-                map.put("author", bookBean.getAuthor());
+//                map.put("introduce", bookBean.getIntroduce());
+//                map.put("author", bookBean.getAuthor());
                 map.put("url",bookBean.getNoteUrl());
                 bookBeanList.add(map);
             }
@@ -164,8 +164,8 @@ public class BookShelfActivity extends AppCompatActivity {
                 bookBean.setNoteUrl(path);
                 bookBean.setName(path.trim().substring(path.lastIndexOf("/")+1));
                 bookBean.setChapterUrl(path);
-                bookBean.setAuthor("唐家三少");
-                bookBean.setIntroduce("这是一片斗气的世界，这里没有绚丽的魔法，有的只有强横的斗气...");
+//                bookBean.setAuthor("唐家三少");
+//                bookBean.setIntroduce("这是一片斗气的世界，这里没有绚丽的魔法，有的只有强横的斗气...");
                 long res=bookBeanDao.insertOrReplace(bookBean);//添加到数据库
                 if(res>0) {
                     getdata();
@@ -269,8 +269,8 @@ public class BookShelfActivity extends AppCompatActivity {
                         for (BookBean bookBean : list) {//添加数据库的所有书籍
                             Map<String, String> map = new HashMap<>();
                             map.put("name", bookBean.getName());
-                            map.put("introduce", bookBean.getIntroduce());
-                            map.put("author", bookBean.getAuthor());
+//                            map.put("introduce", bookBean.getIntroduce());
+//                            map.put("author", bookBean.getAuthor());
                             map.put("url",bookBean.getNoteUrl());
                             bookBeanList.add(map);
                         }
