@@ -5,7 +5,7 @@
 #### 1.项目简介
 随着手机智能化的普及，人们的智能化生活得到了诸多便利，与人们生活嘻嘻相关的各类app应用应运而生，正如大家所说的那样“手机在手，应有尽有”。目前纸质图书阅读不方便，需随身携带书籍，而电子图书只需使用必备的手机即可实现随时随地地阅读，满足人们对于阅读的需求，拓宽人们阅读渠道，也给人们的生活带来的便利性。
 
-**[apk下载](https://github.com/bifan-wei/HwTxtReader/tree/master/demoapk)** <br>
+**[apk下载](https://github.com/Sugarcandy/ReaderApp/blob/master/apk/app-debug.apk)** <br>
 
 #### 2.目前已实现功能及截图
 [1.欢迎页面](#1.欢迎界面)
