@@ -102,8 +102,14 @@ public class BookShelfActivity extends AppCompatActivity {
                 HwTxtPlayActivity.loadTxtFile(BookShelfActivity.this,path);
             }
         });
-        setting=findViewById(R.id.settting);
-        setting.
+        setting=findViewById(R.id.setting);
+        setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(BookShelfActivity.this,AboutActivity.class);
+                startActivity(intent);
+            }
+        });
         LongClick();//长按item弹出菜单
 
         Search();//搜索

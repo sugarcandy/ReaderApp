@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/btn_bg_press"
     tools:context=".activity.BookShelfActivity"
     android:orientation="vertical">
 
@@ -33,6 +34,6 @@
     </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="5dp"
         android:layout_gravity="center"/>
 </LinearLayout>

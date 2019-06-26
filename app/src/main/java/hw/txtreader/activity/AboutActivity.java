@@ -3,11 +3,13 @@ package hw.txtreader.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import hw.txtreader.R;
+
 public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about2);
+        setContentView(R.layout.activity_about);
     }
 }
