@@ -9,46 +9,63 @@
 
 #### 2.目前已实现功能及截图
 [1.欢迎页面](#1.欢迎界面)
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.1.png)
 
 [2.书架页面](#2.书架页面)
+
 （1）增加图书
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.2.1.png)
 
 （2）图书重命名
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.2.2.png)
 
 （3）移出单本图书
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.2.3.png)
 
 （4）移出所有图书
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.2.4.png)
 
 （5）书架图书查询
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.2.5.png)
+
 [3.阅读页面](#3.阅读页面)
+
 （1）目录功能
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.1.png)
 
 （2）字体设置与调节。包括大小、是否加粗。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.2.png)
 
 （3）页面风格设置，夜间模式等。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.3.png)
 
 （4）进度跳转与当前进度获取。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.4.png)
 
 （5）章节获取与章节跳转。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.5.png)
 
 （6）可以滑盖翻页与平移翻页切换，支持轻击翻页。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.6.png)
 
 （7）可以进行长按滑动选择复制文字。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.7.png)
 
 （8）自动跳转到上次阅读进度。
+
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.3.7.png)
 
 [4.关于我们](#4.关于我们)
