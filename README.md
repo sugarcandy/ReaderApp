@@ -8,6 +8,7 @@
 **[apk下载](https://github.com/Sugarcandy/ReaderApp/blob/master/apk/app-debug.apk)** <br>
 
 #### 2.目前已实现功能及截图
+
 [1.欢迎页面](#1.欢迎界面)
 
 ![Image text](https://raw.githubusercontent.com/Sugarcandy/ReaderApp/master/img/3.1.png)
@@ -2143,6 +2144,7 @@
 三.其他关键代码
 
 1.bean
+
 (1)BookBean.java
 
     package hw.txtreader.bean;
@@ -2965,6 +2967,7 @@
     }
 
 3.util
+
 HttpUtil.java
 
     package hw.txtreader.util;
