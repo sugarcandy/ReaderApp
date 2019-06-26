@@ -57,6 +57,7 @@ public class BookShelfActivity extends AppCompatActivity {
     private Boolean Permit = false;
     private final BookBeanDao bookBeanDao=DbHelper.getInstance().getmDaoSession().getBookBeanDao();
     private SearchView search;
+    private ImageButton setting;//关于我们
 
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 0x01;
 
@@ -101,7 +102,8 @@ public class BookShelfActivity extends AppCompatActivity {
                 HwTxtPlayActivity.loadTxtFile(BookShelfActivity.this,path);
             }
         });
-
+        setting=findViewById(R.id.settting);
+        setting.
         LongClick();//长按item弹出菜单
 
         Search();//搜索

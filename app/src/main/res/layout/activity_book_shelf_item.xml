@@ -14,7 +14,7 @@
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="87dp"
             android:layout_height="87dp"
-            android:src="@drawable/txt2" />
+            android:src="@drawable/reader" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,32 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:singleLine="true"
-                android:text="例子"
                 android:textSize="20dp" />
-            <!--<TextView-->
-            <!--android:id="@+id/describe"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="60dp"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:textSize="10dp"-->
-            <!--android:text="这是一片斗气的世界，这里没有绚丽的魔法，有的只有强横的斗气..."/>-->
-            <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="13dp"-->
-            <!--android:layout_marginTop="10dp">-->
-            <!--<de.hdodenhof.circleimageview.CircleImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:src="@drawable/author"/>-->
-            <!--<TextView-->
-            <!--android:id="@+id/author"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_height="13dp"-->
-            <!--android:textSize="10dp"-->
-            <!--android:singleLine="true"-->
-            <!--android:text="唐家三少"/>-->
-            <!--</LinearLayout>-->
         </LinearLayout>
     </LinearLayout>
     <View
