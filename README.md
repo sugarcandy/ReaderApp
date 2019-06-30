@@ -76,7 +76,7 @@
 ## 二. 关键代码
 ###### <a id="1.欢迎界面">1.欢迎页面</a>
   (1)activity_welcome.xml
-
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <com.monke.immerselayout.ImmerseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -121,9 +121,9 @@
         </com.monke.immerselayout.ImmerseFrameLayout>
     
     </com.monke.immerselayout.ImmerseFrameLayout>
-  
+  ```
   （2）WelcomeActivity.java
-  
+  ```java
     package hw.txtreader.activity;
     
     import android.content.Intent;
@@ -204,11 +204,11 @@
             finish();
         }
     }
-
+```
   ###### <a id="2.书架页面">2.书架页面</a>
   
   (1)BookShelfActivity.java(在WelcomeActivity中跳转页面到BookShelfActivity)
-  
+  ```java
     package hw.txtreader.activity;
     
     import android.Manifest;
@@ -516,9 +516,9 @@
             t.show();
         }
     }
-
+```
 (2)activity_header.xml（书架页面，包含图标和ListView）
-
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <com.monke.immerselayout.ImmerseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -591,18 +591,21 @@
             app:backgroundTint="#767676"
             app:fabSize="auto" />
     </com.monke.immerselayout.ImmerseFrameLayout>
-    
+    ```
 (3)activity_alert.xml（重命名页面）
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <EditText xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="请输入新的书名" />
+```
 
 (4)activity_book_shelf_item.xml（每本书的item）
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -643,11 +646,11 @@
             android:layout_height="5dp"
             android:layout_gravity="center" />
     </LinearLayout>
- 
+ ```
 ###### <a id="3.阅读页面">3.阅读页面</a>
 
 (1)在BookShelfActivity.java设置单击事件
-
+```java
      shelf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -656,8 +659,10 @@
                     HwTxtPlayActivity.loadTxtFile(BookShelfActivity.this, path);
                 }
             });
+         
+  ```
 (2)HwTxtPlayActivity.java
-
+```java
     package com.bifan.txtreaderlib.ui;
     
     import android.content.ClipboardManager;
@@ -1479,9 +1484,9 @@
             }
         }
     }
-
+```
 (3)activity_hwtxtplay.xml
-
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -1653,9 +1658,9 @@
             android:layout_centerInParent="true"
             android:visibility="gone" />
     </RelativeLayout>
-
+```
 (4)view_menu_buttom.xml(设置框,单击屏幕中央或设置按钮时显示)
-
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -1983,9 +1988,10 @@
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
-
+```
 (5)view_menu_top.xml(返回框,单击屏幕中央或设置按钮时显示)
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -2015,11 +2021,11 @@
             android:textColor="#ffffff"
             android:textSize="17sp" />
     </LinearLayout>
-
+```
 ###### <a id="4.关于我们">4.关于我们</a>
 
 (1)AboutActivity.java(在书架页面点击右上角图标可以进入该页面)
-
+```java
     package hw.txtreader.activity;
     
     import android.support.v7.app.AppCompatActivity;
@@ -2035,9 +2041,9 @@
             setContentView(R.layout.activity_about);
         }
     }
-
+```
 (2)activity_about.xml
-
+```xml
 	<?xml version="1.0" encoding="utf-8"?>
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -2140,13 +2146,13 @@
 	    </android.support.constraint.ConstraintLayout>
 	
 	</LinearLayout>
-
+```
 三.其他关键代码
 
 1.bean
 
 (1)BookBean.java
-
+```java
     package hw.txtreader.bean;
     
     import com.bifan.txtreaderlib.bean.Chapter;
@@ -2294,9 +2300,9 @@
                     '}';
         }
     }
-
+```
 (2)BookShelfBean.java
-
+```java
     package hw.txtreader.bean;
     
     import org.greenrobot.greendao.annotation.Entity;
@@ -2378,9 +2384,9 @@
                     '}';
         }
     }
-
+```
 2.Dao
-
+```java
 (1)BookBeanDao.java
 
     package hw.txtreader.dao;
@@ -2606,9 +2612,9 @@
         }
     
     }
-
+```
 (2)BookShelfBeanDao.java
-
+```java
     package hw.txtreader.dao;
     
     import android.database.Cursor;
@@ -2749,9 +2755,9 @@
         }
         
     }
-
+```
 (3)DaoMaster.java
-
+```java
     package hw.txtreader.dao;
     
     import android.content.Context;
@@ -2858,9 +2864,9 @@
         }
     
     }
-
+```
 (4)DaoSession.java
-
+```java
     package hw.txtreader.dao;
     
     import java.util.Map;
@@ -2923,9 +2929,10 @@
         }
     
     }
-
+```
 (5)DbHelper.java
 
+```java
     package hw.txtreader.dao;
     
     import org.greenrobot.greendao.database.Database;
@@ -2965,11 +2972,11 @@
             return db;
         }
     }
-
+```
 3.util
 
 HttpUtil.java
-
+```java
     package hw.txtreader.util;
     
     import okhttp3.OkHttpClient;
@@ -2982,3 +2989,26 @@ HttpUtil.java
             client.newCall(request).enqueue(callback);
         }
     }
+ ```
+4.MApplication.java
+
+```java
+package hw.txtreader;
+
+import android.app.Application;
+
+public class MApplication extends Application {
+
+    private static MApplication instance;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        instance = this;
+    }
+
+    public static MApplication getInstance() {
+        return instance;
+    }
+}
+```
